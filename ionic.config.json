@@ -1,0 +1,7 @@
+{
+  "name": "abdserg",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
