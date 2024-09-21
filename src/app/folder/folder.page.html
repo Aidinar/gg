@@ -7,6 +7,8 @@
   </ion-toolbar>
 </ion-header>
 
+
+
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
@@ -15,7 +17,20 @@
   </ion-header>
 
   <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <h1>Мой список машин</h1>
+    <ion-input [(ngModel)] = "val1" label="Марка машины" 
+    label-placement="floating" fill="outline" 
+    placeholder="Ведите текст"></ion-input>
+    <ion-input label="Когда была куплена" 
+    label-placement="floating" fill="outline" 
+    placeholder="Ведите текст"></ion-input>
+    <ion-button (click) = "btn_click()" >Добавить</ion-button> 
+    <ion-item>
+      <ion-label>{{value}}</ion-label>
+    </ion-item>
+  <div>
+    
+  </div>
+
   </div>
 </ion-content>
